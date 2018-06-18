@@ -13,7 +13,7 @@
         );                                                                    
         $data_string = json_encode($data);
         
-        $urls = array('https://mophconnect-ega.clockupstudio.com/test1/api/queue',
+        $urls = array('http://mophconnect-ega.clockupstudio.com/test1/api/queue',
             'http://mophconnect-ega.clockupstudio.com/test2/api/queue',
             'http://mophconnect-ega.clockupstudio.com/test3/api/queue'
                         );
