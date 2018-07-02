@@ -15,8 +15,9 @@
         
         $urls = array('http://mophconnect-ega.clockupstudio.com/test1/api/queue',
             'http://mophconnect-ega.clockupstudio.com/test2/api/queue',
-            'http://mophconnect-ega.clockupstudio.com/test3/api/queue'
-                        );
+            'http://mophconnect-ega.clockupstudio.com/test3/api/queue',
+            'http://mophconnect-ega.clockupstudio.com/test4/api/queue'
+        );
         
         for($i = 0; $i < count($urls); $i++) {
 
