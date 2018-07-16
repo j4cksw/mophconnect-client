@@ -13,10 +13,11 @@
         );                                                                    
         $data_string = json_encode($data);
         
-        $urls = array('http://mophconnect-ega.clockupstudio.com/test1/api/queue',
-            'http://mophconnect-ega.clockupstudio.com/test2/api/queue',
-            'http://mophconnect-ega.clockupstudio.com/test3/api/queue',
-            'http://mophconnect-ega.clockupstudio.com/test4/api/queue'
+        $urls = array('https://mophconnect.go.th/test1/api/queue',
+            'https://mophconnect.go.th/test2/api/queue',
+            'https://mophconnect.go.th/test3/api/queue',
+            'https://mophconnect.go.th/test4/api/queue',
+            'https://mophconnect.go.th/test5/api/queue'
         );
         
         for($i = 0; $i < count($urls); $i++) {
