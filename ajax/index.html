@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<body>
+  <div>
+    Hello
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $.ajax({
+      method: "POST",
+      url: "https://mophconnect.go.th/test/api/queue",
+      contentType: "application/json",
+      data: JSON.stringify({
+        "userId": "Ud876eab475a3023e9be9997fe67791ea",
+        "hospitalName": "โรงพยาบาลปทุมธานี",
+        "origin": "กระทรวงสาธารณสุข",
+        "queueNumber": "จุดคัดกรอง คิวท 2221",
+        "patientName": "นาย ประโยชน์ รุจิรา",
+        "appointmentDate": "2018-04-30",
+        "appointmentTime": "เวลานัดหมาย 09:00-09:15 น. กรุณามาก่อนเวลา 10 นาที",
+        "detailsLink": "http://pth.ddns.net/",
+        "currentQueueLink": "http://pth.ddns.net/"
+      })
+    }).then(
+      (data, textStatus, jqXHR) => console.log(data),
+      (data, textStatus, errorThrown) => console.log(errorThrown))
+  </script>
+</body>
+
+</html>
