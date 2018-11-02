@@ -23,7 +23,9 @@
             'Content-Type: application/json',                                                                                
             'Content-Length: ' . strlen($data_string))                                                                       
         );
-        curl_setopt($ch, CURLOPT_SSLVERSION, 'all');                                                                                                                   
+        curl_setopt($ch, CURLOPT_SSLVERSION, 'all');
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);                                                                                                                    
                                                                                                                             
         $result = curl_exec($ch);
         $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
