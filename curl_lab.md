@@ -30,7 +30,7 @@
 
 4. ระบุ URL ของ Web service
 ``` php
-    $url = 'https://mophconnect-ega.clockupstudio.com/test2/api/queue'
+    $url = 'https://mophconnect.go.th/test/api/queue'
 ```
 
 5. เตรียม curl
